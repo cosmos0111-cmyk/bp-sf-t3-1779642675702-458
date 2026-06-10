@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <meta name="description" content="화곡 셔츠룸, AI가 바꾼 프리미엄 접대 문화. 마포에서 가장 진보된 럭셔리 경험, 지금 확인하세요.">
+    <meta name="keywords" content="화곡 셔츠룸, 마포 셔츠룸, AI 트렌드 셔츠룸, 럭셔리 셔츠룸, 화곡동 셔츠룸, 프리미엄 셔츠룸, 블로그">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sf-t3-1779642675702-458.vercel.app/blog">
+    <!-- Open Graph -->
+    <meta property="og:title" content="화곡 셔츠룸 | AI가 재정의한 럭셔리 | 블로그">
+    <meta property="og:description" content="화곡 셔츠룸, AI가 바꾼 프리미엄 접대 문화. 마포에서 가장 진보된 럭셔리 경험.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200">
+    <meta property="og:url" content="https://sf-t3-1779642675702-458.vercel.app/blog">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="화곡 셔츠룸 | AI 럭셔리 | 블로그">
+    <meta name="twitter:description" content="화곡 셔츠룸, AI가 바꾼 프리미엄 접대 문화.">
+    <title>화곡 셔츠룸 | AI가 바꾼 접대 문화 | 마포 블로그</title>
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0a0a;
+            color: #e5e5e5;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', 'Noto Serif KR', Georgia, serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #f5f0e8;
+        }
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+        }
+        h3 {
+            font-size: 1.75rem;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+        a {
+            color: #d4af37;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            color: #f5f0e8;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+        /* Drop Caps */
+        .drop-cap::first-letter {
+            font-size: 4rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            float: left;
+            line-height: 0.8;
+            margin-right: 12px;
+            color: #d4af37;
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+        }
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .logo a {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #d4af37;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .logo a:hover {
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        .nav-links a {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #d4af37;
+            transition: width 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #d4af37;
+        }
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        .nav-links a.active {
+            color: #d4af37;
+        }
+        .nav-links a.active::after {
+            width: 100%;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 28px;
+            height: 2px;
+            background: #d4af37;
+            transition: all 0.3s ease;
+        }
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding: 120px 24px 80px;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920') center/cover no-repeat;
+            opacity: 0.15;
+            z-index: 0;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            color: #f5f0e8;
+            text-shadow: 0 0 60px rgba(212, 175, 55, 0.1);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        .hero .subtitle {
+            display: inline-block;
+            font-size: 0.85rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #d4af37;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            padding-bottom: 0.5rem;
+        }
+        /* Section */
+        .section {
+            padding: 100px 0;
+        }
+        .section-dark {
+            background: #111111;
+        }
+        .section-light {
+            background: #0f0f0f;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-title h2 {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background: #d4af37;
+            margin: 1rem auto 0;
+        }
+        /* Blog Article */
+        .blog-article {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .blog-article .meta {
+            font-size: 0.85rem;
+            color: #888;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            padding-bottom: 1rem;
+        }
+        .blog-article .meta span {
+            color: #d4af37;
+        }
+        .blog-article blockquote {
+            border-left: 3px solid #d4af37;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #c0b8a8;
+            background: rgba(212, 175, 55, 0.03);
+        }
+        .blog-article img {
+            width: 100%;
+            height: auto;
+            margin: 2rem 0;
+            border-radius: 4px;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        .blog-article .highlight-box {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        .blog-article .highlight-box h3 {
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 80px 24px;
+            background: linear-gradient(135deg, #0a0a0a, #1a1410);
+            border-top: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        .cta-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        .cta-section p {
+            color: #b0b0b0;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 16px 48px;
+            background: transparent;
+            border: 1px solid #d4af37;
+            color: #d4af37;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            background: #d4af37;
+            color: #0a0a0a;
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.3);
+        }
+        /* Footer */
+        footer {
+            background: #050505;
+            padding: 40px 24px;
+            text-align: center;
+            border-top: 1px solid rgba(212, 175, 55, 0.05);
+        }
+        footer p {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        footer a {
+            color: #888;
+        }
+        footer a:hover {
+            color: #d4af37;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(10, 10, 10, 0.98);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1.5rem;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            h3 {
+                font-size: 1.4rem;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .blog-article blockquote {
+                font-size: 1rem;
+                padding: 1rem 1.5rem;
+            }
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">화곡 셔츠룸</a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">홈</a></li>
+                <li><a href="/about">소개</a></li>
+                <li><a href="/services">서비스</a></li>
+                <li><a href="/gallery">갤러리</a></li>
+                <li><a href="/blog" class="active">블로그</a></li>
+                <li><a href="/contact">예약</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="subtitle">화곡 셔츠룸 블로그</span>
+            <h1>AI가 바꾼 접대 문화<br>진짜 럭셔리의 기준</h1>
+            <p>마포에서 가장 뜨거운 논쟁. 화곡 셔츠룸이 왜 패러다임을 바꾸는지,<br>그 이유를 솔직하게 파헤친다.</p>
+        </div>
+    </section>
+
+    <!-- Blog Article Section -->
+    <section class="section section-dark">
+        <div class="blog-article">
+            <div class="meta">
+                <span>화곡 셔츠룸</span> · 2024년 3월 15일 · 5분 읽기
+            </div>
+            <h2>왜 화곡 셔츠룸이 접대 문화의 종말을 선언하는가</h2>
+            <p class="drop-cap">솔직히 말해서, 기존의 접대 문화는 죽었다. 아니, 죽어 마땅하다. 뻔한 코스, 뻔한 서비스, 뻔한 분위기. 고객은 그저 소비자일 뿐, 진짜 경험을 원하는 사람은 없다고 생각했던 업계의 오만함. 하지만 화곡 셔츠룸은 다르다. 우리는 AI 트렌드를 무기로 삼아 접대의 개념 자체를 재정의했다.</p>
+            <p>마포, 화곡동. 이 지역은 항상 변화의 중심에 있었다. 하지만 셔츠룸 업계는 여전히 90년대에 머물러 있었다. 그때 우리가 등장했다. 단순한 공간이 아니라, 데이터와 인공지능이 결합된 럭셔리 경험을 제공하는 편집숍. 당신이 상상하는 모든 것이 여기서는 현실이 된다.</p>
+            <blockquote>
+                "고객이 원하는 것은 더 이상 단순한 안주가 아니다. 그들은 깨어있는 경험, 스스로를 재발견할 수 있는 순간을 원한다. 화곡 셔츠룸은 그 답이다."
+            </blockquote>
+            <p>AI는 단순한 도구가 아니다. 그것은 우리의 철학이다. 우리는 고객의 취향, 패턴, 감정을 분석해 완벽히 개인화된 경험을 설계한다. 당신이 좋아하는 음악, 조명, 향기, 심지
+</body>
+</html>
